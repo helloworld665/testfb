@@ -1,6 +1,10 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+import config from '../config';
 var app = express();
+
+const VERIFY_TOKEN = config.VERIFY_TOKEN;
+const PAGE_TOKEN = config.PAGE_TOKEN;
 
 app.set('port', (process.env.PORT || 5000));
 
