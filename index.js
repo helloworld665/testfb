@@ -10,7 +10,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.get('/test', function(request, response) {
-  response.render("just for test");
+  response.send('Just for test');
 });
 
 app.get('/', function(request, response) {
